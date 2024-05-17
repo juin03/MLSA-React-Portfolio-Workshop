@@ -1,0 +1,29 @@
+[
+  {
+    "role": "System Tester",
+    "organisation": "Hilti",
+    "startDate": "March, 2024",
+    "endDate": "Present",
+    "experiences": ["Identify Bugs and report it", "Improved user experiece"],
+    "imageSrc": "hilti.png"
+  },
+  {
+    "role": "Microsoft Learn Student Ambassador",
+    "organisation": "Mirosoft",
+    "startDate": "January, 2024",
+    "endDate": "Present",
+    "experiences": ["Promote Microsoft Technologies", "Organise Workshops and events"],
+    "imageSrc": "mlsa.png"
+  },
+  {
+    "role": "Telebort Intern",
+    "organisation": "Telebort",
+    "startDate": "Sept, 2023",
+    "endDate": "Dec, 2023",
+    "experiences": [
+      "Facilitated Coding classes",
+      "Helped in developing of new programs"
+    ],
+    "imageSrc": "telebort.png"
+  }
+]
