@@ -3,7 +3,17 @@ import React from "react";
 import styles from "./Experience.module.css";
 import skills from "../../data/skills.json";
 import history from "../../data/history.json";
-import { getImageUrl } from "../../utils";
+import  "../../../assets/skills/html.png";
+import  "../../../assets/skills/css.png";
+import  "../../../assets/skills/react.png";
+import  "../../../assets/skills/node.png";
+import  "../../../assets/skills/graphql.png";
+import  "../../../assets/skills/mongodb.png";
+import  "../../../assets/skills/figma.png";
+import  "../../../assets/history/hilti.png";
+import  "../../../assets/history/mlsa.png";
+import  "../../../assets/history/telebort.png";
+
 
 export const Experience = () => {
   return (
@@ -15,19 +25,22 @@ export const Experience = () => {
             return (
               <div key={id} className={styles.skill}>
                 <div className={styles.skillImageContainer}>
-                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+                <img src={require(`../../../assets/skills/${skill.imageSrc}`)} alt={skill.title} />
+
                 </div>
                 <p>{skill.title}</p>
               </div>
             );
           })}
         </div>
+
+
         <ul className={styles.history}>
           {history.map((historyItem, id) => {
             return (
               <li key={id} className={styles.historyItem}>
                 <img
-                  src={getImageUrl(historyItem.imageSrc)}
+                  src={require(`../../../assets/history/${historyItem.imageSrc}`)}
                   alt={`${historyItem.organisation} Logo`}
                 />
                 <div className={styles.historyItemDetails}>

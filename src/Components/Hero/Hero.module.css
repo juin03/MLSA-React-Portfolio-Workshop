@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 49px;
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
@@ -24,13 +23,7 @@
   font-weight: 900;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+
 }
 
 .description {
@@ -51,26 +44,28 @@
 }
 
 .heroImg {
-  width: 50%;
+  width: 35%;
   z-index: 1;
+  transform: scaleX(-1); /* Flip vertically */
 
-  animation-name: floating;
+  animation-name: floatingAndFlipping; /* Use a new animation name */
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
-@keyframes floating {
+@keyframes floatingAndFlipping {
   0% {
-    transform: translate(0, 0px);
+    transform: scaleX(-1) translateY(0px); /* Initial state: flipped vertically and no translation */
   }
   50% {
-    transform: translate(0, 10px);
+    transform: scaleX(-1) translateY(10px); /* Midpoint: flipped vertically and translated vertically by 10px */
   }
   100% {
-    transform: translate(0, -0px);
+    transform: scaleX(-1) translateY(0px); /* End state: flipped vertically and back to initial position */
   }
 }
+
 
 .topBlur {
   position: absolute;
@@ -107,5 +102,9 @@
 
   .content {
     align-items: center;
+  }
+
+  .heroImg {
+    width: 55%;
   }
 }
