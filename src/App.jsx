@@ -1,10 +1,12 @@
 import styles from "./App.module.css";
-import { About } from "./components/About/About";
-import { Contact } from "./components/Contact/Contact";
-import { Experience } from "./components/Experience/Experience";
-import { Hero } from "./components/Hero/Hero";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Projects } from "./components/Projects/Projects";
+import { About } from "./Components/About/About";
+import { Contact } from "./Components/Contact/Contact";
+import { Experience } from "./Components/Experience/Experience";
+import { Hero } from "./Components/Hero/Hero";
+import { Navbar } from "./Components/Navbar/Navbar";
+import { Projects } from "./Components/Projects/Projects";
+
+import React from "react";
 
 function App() {
   return (
