@@ -22,7 +22,8 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Student Developer</h3>
               <p>
-                I'm interesting in learning new technologies and building websites!
+                Im interesting in learning new technologies and building
+                websites!
               </p>
             </div>
           </li>
@@ -31,7 +32,8 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Y2 Computer Science Student</h3>
               <p>
-              I'm interesting in learning new technologies and building websites!
+                Im interesting in learning new technologies and building
+                websites!
               </p>
             </div>
           </li>
@@ -40,7 +42,8 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>UI Designer</h3>
               <p>
-              I'm interesting in learning new technologies and building websites!
+                Im interesting in learning new technologies and building
+                websites!
               </p>
             </div>
           </li>
