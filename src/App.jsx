@@ -1,3 +1,6 @@
+// Purpose: The App.jsx file acts as the root component of your React application.
+// It holds and organizes all other components.
+
 import styles from "./App.module.css";
 import { About } from "./Components/About/About";
 import { Contact } from "./Components/Contact/Contact";
